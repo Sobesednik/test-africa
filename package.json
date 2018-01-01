@@ -11,7 +11,9 @@
     "type": "git",
     "url": "git://github.com/Sobesednik/test-africa.git"
   },
-  "keywords": ["test-africa"],
+  "keywords": [
+    "test-africa"
+  ],
   "author": "Anton <anton@sobes.io>",
   "license": "MIT",
   "bugs": {
@@ -20,5 +22,8 @@
   "homepage": "https://github.com/Sobesednik/test-africa#readme",
   "devDependencies": {
     "zoroaster": "0.4.6"
+  },
+  "dependencies": {
+    "africa": "github:sobesednik/africa"
   }
 }

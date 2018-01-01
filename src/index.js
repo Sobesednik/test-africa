@@ -1,8 +1,17 @@
+const africa = require('africa')
+
 /**
  * Invoke package's main function
  */
-function testAfrica() {
-    console.log('test-africa called')
+async function testAfrica() {
+    const res = await africa('test-test-africa', {
+        name: {
+            text: 'Your name: ',
+        },
+    }, {
+        force: true,
+    })
+    return res
 }
 
 module.exports = testAfrica

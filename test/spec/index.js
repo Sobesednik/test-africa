@@ -1,16 +1,15 @@
 const assert = require('assert')
 const context = require('../context/')
-const testAfrica = require('../../src/')
+const testAfrica = require('../..')
 
 const testAfricaTestSuite = {
     context,
     'should be a function': () => {
         assert.equal(typeof testAfrica, 'function')
     },
-    'should call package without error': () => {
-        assert.doesNotThrow(() => {
-            testAfrica()
-        })
+    async 'should call package without error'() {
+        const res = await testAfrica()
+        console.log(res)
     },
 }
 
