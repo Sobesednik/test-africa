@@ -1,0 +1,3 @@
+const testAfrica = require('./')
+
+testAfrica()
